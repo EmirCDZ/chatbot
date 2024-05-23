@@ -8,7 +8,7 @@ const port = process.env.PORT || 4069;
 
 const app = express();
 app.use(express.json());
-app.use(apiKeyProtection); // API key protection to all endpoints. Disable it in config file.
+app.use(apiKeyProtection); // Enables API key protection for all the endpoints. Disable it in config file.
 
 assistant.init();
 
