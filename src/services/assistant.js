@@ -108,7 +108,7 @@ async function chat(userInput, threadId) {
 // Force a new assistant to be created by deleting the 'existing_assistant.json' file manually.
 async function createAssistant() {
     console.log("Creating assistant...");
-    const existingAssistantPath = path.resolve(__dirname, '../existing_assistant.json');;
+    const existingAssistantPath = path.resolve(__dirname, '../existing_assistant.json');
 
     const assistantConfigInfo = {
         name: process.env.CHATBOT_NAME,
